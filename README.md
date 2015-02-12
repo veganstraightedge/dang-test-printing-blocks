@@ -6,7 +6,7 @@ Getting this syntax error when using a `link_to` with a block for its display te
 
     /dang-test-printing-blocks/app/views/people/show.html.dang:2: syntax error, unexpected ')' ...t << ( link_to @person.url do ).to_s;_out << " \n ";_out ... ... ^ /dang-test-printing-blocks/app/views/people/show.html.dang:2: syntax error, unexpected keyword_end ...s;_out << " \n ";_out << ( end ).to_s;_out << "\n\n";_out <... ... ^ /dang-test-printing-blocks/app/views/people/show.html.dang:3: syntax error, unexpected keyword_ensure, expecting ')' /dang-test-printing-blocks/app/views/people/show.html.dang:5: syntax error, unexpected keyword_end, expecting ')'
 
-**Note:** the `_form` partial is still `.html.erb` because the `form_for` block has the same problem. I'm guessing that fixing the `link_to` will also fix the `form_for`.
+**Note:** the `_form` partial is still `.html.erb` because the `form_for` block has the same problem. I'm guessing that fixing the `link_to` will also fix the `form_for`. You can toggle between the `.erb` and the `.dang` form partial by adding or removing the leading `_` in the filename.
 
 # Instructions
 

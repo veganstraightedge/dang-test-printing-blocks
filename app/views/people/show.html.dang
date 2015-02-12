@@ -26,6 +26,8 @@ p>
 &lt;| end |&gt;
 code>
 
+<p I've also tried with <code &lt;: end :&gt; code> p>
+
 <h1 But it throws a syntax error :( h1>
 
 <| link_to 'Edit', edit_person_path(@person) |>
