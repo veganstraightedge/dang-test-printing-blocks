@@ -3,9 +3,9 @@
 one:
   url: MyString
   first_name: MyString
-  last: MyString
+  last_name: MyString
 
 two:
   url: MyString
   first_name: MyString
-  last: MyString
+  last_name: MyString

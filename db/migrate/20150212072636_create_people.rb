@@ -3,7 +3,7 @@ class CreatePeople < ActiveRecord::Migration
     create_table :people do |t|
       t.string :url
       t.string :first_name
-      t.string :last
+      t.string :last_name
 
       t.timestamps null: false
     end

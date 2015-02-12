@@ -1,19 +1,32 @@
 <p#notice <| notice |> p>
 
-<p>
+<h1 Instead of this: h1>
+
+<p
   <strong URL: strong>
   <| @person.url |>
- p>
+p>
 
-<p>
+<p
   <strong First Name: strong>
   <| @person.first_name |>
- p>
+p>
 
-<p>
-  <strong Last: strong>
-  <| @person.last |>
- p>
+<p
+  <strong Last Name: strong>
+  <| @person.last_name |>
+p>
 
-<| link_to 'Edit', edit_person_path(@person) |> |
+<h1 I want to be able to this: h1>
+
+<code
+&lt;| link_to @person.url do |&gt; <br />
+&nbsp;&nbsp;&lt;| @person.first_name |&gt;   <br />
+&nbsp;&nbsp;&lt;| @person.last_name |&gt;    <br />
+&lt;| end |&gt;
+code>
+
+<h1 But it throws a syntax error :( h1>
+
+<| link_to 'Edit', edit_person_path(@person) |>
 <| link_to 'Back', people_path |>

@@ -53,6 +53,6 @@ class PeopleController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def person_params
-      params.require(:person).permit(:url, :first_name, :last)
+      params.require(:person).permit(:url, :first_name, :last_name)
     end
 end
