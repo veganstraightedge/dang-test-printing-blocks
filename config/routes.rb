@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
+  root 'peoople#index'
   resources :people
-
-  root 'welcome#index'
 end
