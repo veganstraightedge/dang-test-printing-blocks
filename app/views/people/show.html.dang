@@ -1,0 +1,19 @@
+<p#notice <| notice |> p>
+
+<p>
+  <strong URL: strong>
+  <| @person.url |>
+ p>
+
+<p>
+  <strong First Name: strong>
+  <| @person.first_name |>
+ p>
+
+<p>
+  <strong Last: strong>
+  <| @person.last |>
+ p>
+
+<| link_to 'Edit', edit_person_path(@person) |> |
+<| link_to 'Back', people_path |>
